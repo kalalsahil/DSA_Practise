@@ -116,3 +116,61 @@ Instead of reversing the entire number, we can reverse half of the number and co
 
 <br><br>Constraints:
 <br>1 <= a, b <= 109
+
+# Day4_Problem1
+
+**Coding Ninjas : Check Armstrong**
+<br>_link_ - https://www.naukri.com/code360/problems/check-armstrong_589
+<br>Problem statement
+<br>You are given an integer 'n'. Return 'true' if 'n' is an Armstrong number, and 'false' otherwise.
+
+<br>An Armstrong number is a number (with 'k' digits) such that the sum of its digits raised to 'kth' power is equal to the number itself. For example, 371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371.
+
+<br>Detailed explanation ( Input/output format, Notes, Images )
+<br>Sample Input 1 : 1
+
+<br>Sample Output 1 : true
+
+<br>Explanation of Sample Input 1 :
+<br>1 is an Armstrong number as, 1^1 = 1.
+
+<br>Sample Input 2 : 103
+<br>Sample Output 2 : false
+
+<br>Sample Input 3 : 1634
+<br>Sample Output 3 : true
+
+<br>Explanation of Sample Input 3 :
+<br>1634 is an Armstrong number, as 1^4 + 6^4 + 3^4 + 4^4 = 1634
+
+# Day4_Problem2
+
+**Geeks for Geeks : Sum of all divisors from 1 to n**
+<br>_link_ - https://www.geeksforgeeks.org/problems/sum-of-all-divisors-from-1-to-n4738/1
+<br>Given a positive integer n, The task is to find the value of Σi from 1 to n F(i) where function F(i) for the number i is defined as the sum of all divisors of i.
+
+<br>Examples:
+<br>Input: n = 4
+<br>Output: 15
+<br>Explanation:
+<br>F(1) = 1
+<br>F(2) = 1 + 2 = 3
+<br>F(3) = 1 + 3 = 4
+<br>F(4) = 1 + 2 + 4 = 7
+<br>So, F(1) + F(2) + F(3) + F(4) = 1 + 3 + 4 + 7 = 15
+<br>Input: n = 5
+<br>Output: 21
+<br>Explanation:
+<br>F(1) = 1
+<br>F(2) = 1 + 2 = 3
+<br>F(3) = 1 + 3 = 4
+<br>F(4) = 1 + 2 + 4 = 7
+<br>F(5) = 1 + 5 = 6
+<br>So, F(1) + F(2) + F(3) + F(4) + F(5) = 1 + 3 + 4 + 7 + 6 = 21
+<br>Input: n = 1
+<br>Output: 1
+<br>Explanation:
+<br>F(1) = 1
+<br>So, F(1) = 1
+<br><br>Constraints:
+<br>1 <= n <= 106
