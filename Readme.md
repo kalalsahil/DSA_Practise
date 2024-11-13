@@ -174,3 +174,53 @@ Instead of reversing the entire number, we can reverse half of the number and co
 <br>So, F(1) = 1
 <br><br>Constraints:
 <br>1 <= n <= 106
+
+# Day4_Problem1
+
+**Coding Ninjas : Check Armstrong**
+<br>_link_ - https://www.naukri.com/code360/problems/check-prime_624934
+<br>Problem statement
+<br>A prime number is a positive integer that is divisible by exactly 2 integers, 1 and the number itself.
+<br>You are given a number 'n'.
+<br>Find out whether 'n' is prime or not.
+
+Example :
+<br>Input: 'n' = 5
+
+<br>Output: YES
+
+<br>Explanation: 5 is only divisible by 1 and 5. 2, 3 and 4 do not divide 5.
+Detailed explanation ( Input/output format, Notes, Images )
+<br>Sample Input 1: 5
+
+<br>Sample Output 1: YES
+
+<br>Explanation of sample input 1 :
+5 is only divisible by 1 and 5. 2, 3 and 4 do not divide 5.
+
+<br>Sample Input 2:
+6
+
+<br>Sample Output 2:
+NO
+
+<br>Explanation of sample input 2 :
+6 is divisible by 1, 2, 3, and 6. Therefore it is not a prime number.
+Numbers having more than two factors are known as composite numbers.
+
+<br>Sample Input 3:
+1
+<br>Sample Output 3:
+<br>NO
+
+<br>Explanation of sample input 3 :
+<br>1 is divisible only by 1, having only one factor. Therefore it is not a prime number.
+<br>1 is neither a prime nor a composite number.
+
+<br>Expected time complexity :
+The expected time complexity is O(sqrt('n')).
+
+<br>Constraints :
+<br>1 <= 'n' <= 10 ^ 9
+
+<br>Time limit: 1 second
