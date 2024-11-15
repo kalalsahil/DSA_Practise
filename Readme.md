@@ -175,9 +175,9 @@ Instead of reversing the entire number, we can reverse half of the number and co
 <br><br>Constraints:
 <br>1 <= n <= 106
 
-# Day4_Problem1
+# Day4_Problem3
 
-**Coding Ninjas : Check Armstrong**
+**Coding Ninjas : Check Prime**
 <br>_link_ - https://www.naukri.com/code360/problems/check-prime_624934
 <br>Problem statement
 <br>A prime number is a positive integer that is divisible by exactly 2 integers, 1 and the number itself.
@@ -224,3 +224,97 @@ The expected time complexity is O(sqrt('n')).
 <br>1 <= 'n' <= 10 ^ 9
 
 <br>Time limit: 1 second
+
+# Day5_Problem1
+
+**TakeUForward: Print n times using Recursion**
+<br>_link_ -https://takeuforward.org/recursion/introduction-to-recursion-understand-recursion-by-printing-something-n-times/
+<br>Print Your Name n times.
+<br>Print 1 to n using recursion.
+<br>Print n to 1 using recursion.
+<br>Sum of first n natural numbers using recursion.
+<br>Factorial of n using recursion.
+<br>Reverse array using recursion.
+
+# Day5_Problem2
+
+**Leetcode Problem 125: Valid Palindrome**
+<br>_link_ - https://leetcode.com/problems/valid-palindrome/description/
+<br>A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+
+Given a string s, return true if it is a palindrome, or false otherwise.
+
+Example 1:
+
+Input: s = "A man, a plan, a canal: Panama"
+Output: true
+Explanation: "amanaplanacanalpanama" is a palindrome.
+Example 2:
+
+Input: s = "race a car"
+Output: false
+Explanation: "raceacar" is not a palindrome.
+Example 3:
+
+Input: s = " "
+Output: true
+Explanation: s is an empty string "" after removing non-alphanumeric characters.
+Since an empty string reads the same forward and backward, it is a palindrome.
+
+# Day6_Problem1
+
+**Leetcode Problem 509: Fibonacci Number**
+<br>_link_ - https://leetcode.com/problems/fibonacci-number/description/
+<br>The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
+
+F(0) = 0, F(1) = 1
+F(n) = F(n - 1) + F(n - 2), for n > 1.
+Given n, calculate F(n).
+
+Example 1:
+
+Input: n = 2
+Output: 1
+Explanation: F(2) = F(1) + F(0) = 1 + 0 = 1.
+Example 2:
+
+Input: n = 3
+Output: 2
+Explanation: F(3) = F(2) + F(1) = 1 + 1 = 2.
+Example 3:
+
+Input: n = 4
+Output: 3
+Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
+
+<br>Constraints:
+<br>0 <= n <= 30
+
+# Day6_Problem2
+
+**Geeks for Geeks: Frequencies of limited range array**
+<br>_link_ - https://www.geeksforgeeks.org/problems/frequency-of-array-elements-1587115620/0
+<br>You are given an array arr[] containing positive integers. These integers can be from 1 to p, and some numbers may be repeated or absent. Your task is to count the frequency of all numbers that lie in the range 1 to n.
+
+Note:
+
+Do modify the array in-place changes in arr[], such that arr[i] = frequency(i) and assume 1-based indexing.
+The elements greater than n in the array can be ignored when counting.
+
+Examples
+
+Input: n = 5, arr[] = [2, 3, 2, 3, 5], p = 5
+Output: [0, 2, 2, 0, 1]
+Explanation: Counting frequencies of each array element We have: 1 occurring 0 times. 2 occurring 2 times. 3 occurring 2 times. 4 occurring 0 times. 5 occurring 1 time, all the modifications done in the same given arr[].
+
+Input: n = 4, arr[] = [3, 3, 3, 3], p = 3
+Output: [0, 0, 4, 0]
+Explanation: Counting frequencies of each array element We have: 1 occurring 0 times. 2 occurring 0 times. 3 occurring 4 times. 4 occurring 0 times.
+Input: n = 2, arr[] = [8, 9], p = 9
+Output: [0, 0]
+Explanation: Counting frequencies of each array element We have: 1 occurring 0 times. 2 occurring 0 times. Since here P=9, but there are no 9th Index present so can't count the value.
+
+Constraints:
+1 ≤ n ≤ 105
+1 ≤ p ≤ 4\*104
+1 <= arr[i] <= p
