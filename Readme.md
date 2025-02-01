@@ -475,3 +475,316 @@ Constraints:
 1 <= nums.length <= 105
 -231 <= nums[i] <= 231 - 1
 0 <= k <= 105
+
+# Day9_Problem1
+
+**Leetcode 283: Move Zeroes**
+<br>_link_ - https://leetcode.com/problems/move-zeroes/description/
+
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+Note that you must do this in-place without making a copy of the array.
+
+Example 1:
+
+Input: nums = [0,1,0,3,12]
+
+Output: [1,3,12,0,0]
+
+Example 2:
+
+Input: nums = [0]
+
+Output: [0]
+
+Constraints:
+
+1 <= nums.length <= 104
+
+-231 <= nums[i] <= 231 - 1
+
+# Day9_Problem2
+
+**Geeks for Geeks: Sorted array Search/ Linear Search**
+<br>_link_ - https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
+
+Sorted Array Search
+
+Given an array, arr[] sorted in ascending order and an integer k. Return true if k is present in the array, otherwise, false.
+
+Examples:
+
+Input: arr[] = [1, 2, 3, 4, 6], k = 6
+
+Output: true
+
+Exlpanation: Since, 6 is present in the array at index 4 (0-based indexing), output is true.
+
+Input: arr[] = [1, 2, 4, 5, 6], k = 3
+
+Output: false
+
+Exlpanation: Since, 3 is not present in the array, output is false.
+
+Input: arr[] = [2, 3, 5, 6], k = 1
+
+Output: false
+
+Constraints:
+
+1 <= arr.size() <= 106
+
+1 <= k <= 106
+
+1 <= arr[i] <= 106
+
+# Day10_Problem1
+
+**Geeks for Geeks: Union of 2 Sorted with Duplicates**
+<br>_link_ - https://www.geeksforgeeks.org/problems/union-of-two-sorted-arrays-1587115621/1
+
+Given two sorted arrays a[] and b[], where each array may contain duplicate elements , the task is to return the elements in the union of the two arrays in sorted order.
+
+Union of two arrays can be defined as the set containing distinct common elements that are present in either of the arrays.
+
+Examples:
+
+Input: a[] = [1, 2, 3, 4, 5], b[] = [1, 2, 3, 6, 7]
+
+Output: 1 2 3 4 5 6 7
+
+Explanation: Distinct elements including both the arrays are: 1 2 3 4 5 6 7.
+
+Input: a[] = [2, 2, 3, 4, 5], b[] = [1, 1, 2, 3, 4]
+
+Output: 1 2 3 4 5
+
+Explanation: Distinct elements including both the arrays are: 1 2 3 4 5.
+
+Input: a[] = [1, 1, 1, 1, 1], b[] = [2, 2, 2, 2, 2]
+
+Output: 1 2
+
+Explanation: Distinct elements including both the arrays are: 1 2.
+
+Constraints:
+
+1 <= a.size(), b.size() <= 105
+
+-10^9 <= a[i] , b[i] <= 10^9
+
+# Day11_Problem1
+
+**LeetCode 268: Missing Number**
+<br>_link_ - https://leetcode.com/problems/missing-number/description/
+
+Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
+Example 1:
+
+Input: nums = [3,0,1]
+
+Output: 2
+
+Explanation: n = 3 since there are 3 numbers, so all numbers are in the range [0,3]. 2 is the missing number in the range since it does not appear in nums.
+
+Example 2:
+
+Input: nums = [0,1]
+
+Output: 2
+
+Explanation: n = 2 since there are 2 numbers, so all numbers are in the range [0,2]. 2 is the missing number in the range since it does not appear in nums.
+
+Example 3:
+
+Input: nums = [9,6,4,2,3,5,7,0,1]
+
+Output: 8
+
+Explanation: n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
+
+Constraints:
+
+n == nums.length
+
+1 <= n <= 104
+
+0 <= nums[i] <= n
+
+All the numbers of nums are unique.
+
+# Day11_Problem2
+
+**LeetCode 485: Max Consecutive Ones**
+<br>_link_ - https://leetcode.com/problems/max-consecutive-ones/description/
+
+Given a binary array nums, return the maximum number of consecutive 1's in the array.
+
+Example 1:
+
+Input: nums = [1,1,0,1,1,1]
+
+Output: 3
+
+Explanation: The first two digits or the last three digits are consecutive 1s. The maximum number of consecutive 1s is 3.
+Example 2:
+
+Input: nums = [1,0,1,1,0,1]
+
+Output: 2
+
+Constraints:
+
+1 <= nums.length <= 105
+
+nums[i] is either 0 or 1.
+
+# Day12_Problem1
+
+**LeetCode 136: Single Number**
+<br>_link_ - https://leetcode.com/problems/single-number/description/
+
+Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+
+Example 1:
+
+Input: nums = [2,2,1]
+
+Output: 1
+
+Example 2:
+
+Input: nums = [4,1,2,1,2]
+
+Output: 4
+
+Example 3:
+
+Input: nums = [1]
+
+Output: 1
+
+Constraints:
+
+1 <= nums.length <= 3 \* 104
+
+-3 _ 104 <= nums[i] <= 3 _ 104
+
+Each element in the array appears twice except for one element which appears only once.
+
+# Day12_Problem2
+
+**Geeks for Geeks: Longest Sub-Array with Sum K**
+<br>_link_ - https://www.geeksforgeeks.org/problems/longest-sub-array-with-sum-k0809/1
+
+Given an array arr[] containing integers and an integer k, your task is to find the length of the longest subarray where the sum of its elements is equal to the given value k. It is guaranteed that a valid subarray exists.
+
+Examples:
+
+Input: arr[] = [10, 5, 2, 7, 1, 9], k = 15
+
+Output: 4
+
+Explanation: The subarray [5, 2, 7, 1] has a sum of 15 and length 4.
+
+Input: arr[] = [-1, 2, -3], k = -2
+
+Output: 3
+
+Explanation: The subarray [-1, 2, -3] has a sum of -2 and length 3.
+
+Input: arr[] = [1, -1, 5, -2, 3], k = 3
+
+Output: 4
+
+Explanation: The subarray [1, -1, 5, -2] has a sum of 3 and a length 4.
+
+Constraints:
+
+1 ≤ arr.size() ≤ 106
+
+-109 ≤ arr[i], k ≤ 109
+
+# Day13_Problem1
+
+**LeetCode 7: Reverse Integer**
+<br>_link_ - https://leetcode.com/problems/reverse-integer/description/
+<br>Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+Example 1:
+
+Input: x = 123
+Output: 321
+Example 2:
+
+Input: x = -123
+Output: -321
+Example 3:
+
+Input: x = 120
+Output: 21
+
+Constraints:
+
+-231 <= x <= 231 - 1
+
+# Day14_Problem1
+
+**LeetCode 231: Power of Two**
+
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+
+An integer n is a power of two, if there exists an integer x such that n == 2x.
+
+Example 1:
+
+Input: n = 1
+Output: true
+Explanation: 20 = 1
+Example 2:
+
+Input: n = 16
+Output: true
+Explanation: 24 = 16
+Example 3:
+
+Input: n = 3
+Output: false
+
+Constraints:
+
+-231 <= n <= 231 - 1
+
+# Day15_Problem1
+
+**LeetCode 1009: Complement of Base 10 Integer**
+
+The complement of an integer is the integer you get when you flip all the 0's to 1's and all the 1's to 0's in its binary representation.
+
+For example, The integer 5 is "101" in binary and its complement is "010" which is the integer 2.
+Given an integer n, return its complement.
+
+Example 1:
+
+Input: n = 5
+Output: 2
+Explanation: 5 is "101" in binary, with complement "010" in binary, which is 2 in base-10.
+Example 2:
+
+Input: n = 7
+Output: 0
+Explanation: 7 is "111" in binary, with complement "000" in binary, which is 0 in base-10.
+Example 3:
+
+Input: n = 10
+Output: 5
+Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 5 in base-10.
+
+Constraints:
+
+0 <= n < 109
