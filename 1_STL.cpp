@@ -227,8 +227,8 @@ void explainSet()
     auto it2 = st.find(4);
 
     st.erase(it1, it2); // after erase {1,4,5} [first,last)
-    auto it1 = st.lower_bound(2);
-    auto it2 = st.upper_bound(3);
+    // auto it1 = st.lower_bound(2);
+    // auto it2 = st.upper_bound(3);
 }
 
 void explainMultiSet()
@@ -327,6 +327,10 @@ void algo()
     pair<int, int> p[] = {{1, 2}, {2, 1}, {4, 1}};
     int n = 3;
     sort(p, p + n, comp);
+    for (auto it : p)
+    {
+        cout << it.first << " " << it.second << endl;
+    }
 
     int num = 7;
     int cnt = __builtin_popcount(num);
@@ -346,6 +350,6 @@ void algo()
 
 int main()
 {
-    explainPair();
+    algo();
     return 0;
 }

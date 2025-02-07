@@ -669,9 +669,9 @@ Output: 1
 
 Constraints:
 
-1 <= nums.length <= 3 \* 104
+1 <= nums.length <= 3 \* 10^4
 
--3 _ 104 <= nums[i] <= 3 _ 104
+-3 \* 10^4 <= nums[i] <= 3 \* 10^4
 
 Each element in the array appears twice except for one element which appears only once.
 
@@ -788,3 +788,244 @@ Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 
 Constraints:
 
 0 <= n < 109
+
+# Day16_Problem1
+
+**Swap Alternate Elements**
+arr = 1, 2, 3, 4, 5
+output: 2 1 4 3 5
+
+arr = 1, 2, 3, 4, 5, 6
+output: 2 1 4 3 6 5
+
+# Day16_Problem2
+
+**Coding Ninjas: Duplicate In Array**
+<br>_link_ - https://www.naukri.com/code360/problems/duplicate-in-array_893397?source=youtube&campaign=love_babbar_codestudio1
+<br>Problem statement
+You are given an array ‘ARR’ of size ‘N’ containing each number between 1 and ‘N’ - 1 at least once. There is a single integer value that is present in the array twice. Your task is to find the duplicate integer value present in the array.
+
+For example:
+
+Consider ARR = [1, 2, 3, 4, 4], the duplicate integer value present in the array is 4. Hence, the answer is 4 in this case.
+
+Note :
+A duplicate number is always present in the given array.
+Detailed explanation ( Input/output format, Notes, Images )
+
+Constraints:
+
+1 <= T <= 10
+
+2 <= N <= 10 ^ 5
+
+1 <= ARR[i] <= N - 1
+
+# Day17_Problem1
+
+**LeetCode 1207: Unique Number of Occurrences**
+<br>_link_ - https://leetcode.com/problems/unique-number-of-occurrences/description/
+<br>Given an array of integers arr, return true if the number of occurrences of each value in the array is unique or false otherwise.
+
+Example 1:
+
+Input: arr = [1,2,2,1,1,3]
+Output: true
+Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
+Example 2:
+
+Input: arr = [1,2]
+Output: false
+Example 3:
+
+Input: arr = [-3,0,1,-3,1,1,1,-3,10,0]
+Output: true
+
+Constraints:
+
+1 <= arr.length <= 1000
+
+-1000 <= arr[i] <= 1000
+
+# Day17_Problem2
+
+**LeetCode 442: Find All Duplicates in an Array**
+<br>_link_ - https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+<br>Given an integer array nums of length n where all the integers of nums are in the range [1, n] and each integer appears at most twice, return an array of all the integers that appears twice.
+
+You must write an algorithm that runs in O(n) time and uses only constant auxiliary space, excluding the space needed to store the output
+
+Example 1:
+
+Input: nums = [4,3,2,7,8,2,3,1]
+Output: [2,3]
+Example 2:
+
+Input: nums = [1,1,2]
+Output: [1]
+Example 3:
+
+Input: nums = [1]
+Output: []
+
+Constraints:
+
+n == nums.length
+
+1 <= n <= 105
+
+1 <= nums[i] <= n
+
+Each element in nums appears once or twice.
+
+# Day18_Problem1
+
+**Intersection Of Two Sorted Arrays**
+<br>_link_ - https://www.naukri.com/code360/problems/intersection-of-2-arrays_1082149?source=youtube&campaign=love_babbar_codestudio1
+<br>Problem statement
+
+You are given two arrays 'A' and 'B' of size 'N' and 'M' respectively. Both these arrays are sorted in non-decreasing order. You have to find the intersection of these two arrays.
+
+Intersection of two arrays is an array that consists of all the common elements occurring in both arrays.
+
+Note :
+
+1. The length of each array is greater than zero.
+
+2. Both the arrays are sorted in non-decreasing order.
+
+3. The output should be in the order of elements that occur in the original arrays.
+
+4. If there is no intersection present then return an empty array.
+
+Detailed explanation ( Input/output format, Notes, Images )
+
+Constraints :
+
+1 <= T <= 100
+
+1 <= N, M <= 10^4
+
+0 <= A[i] <= 10^5
+
+0 <= B[i] <= 10^5
+
+Time Limit: 1 sec
+
+# Day18_Problem2
+
+**LEETCODE 1: Two Sum**
+<br>_link_ - https://leetcode.com/problems/two-sum/description/
+<br>Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example 1:
+
+Input: nums = [2,7,11,15], target = 9
+
+Output: [0,1]
+
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+Example 2:
+
+Input: nums = [3,2,4], target = 6
+
+Output: [1,2]
+
+Example 3:
+
+Input: nums = [3,3], target = 6
+
+Output: [0,1]
+
+Constraints:
+
+2 <= nums.length <= 10^4
+
+-10^9 <= nums[i] <= 10^9
+
+-10^9 <= target <= 10^9
+
+Only one valid answer exists.
+
+# Day19_Problem1
+
+**LEETCODE 75: Sort Colors**
+<br>_link_ - https://leetcode.com/problems/sort-colors/description/
+<br>Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+
+You must solve this problem without using the library's sort function.
+
+Example 1:
+
+Input: nums = [2,0,2,1,1,0]
+
+Output: [0,0,1,1,2,2]
+
+Example 2:
+
+Input: nums = [2,0,1]
+
+Output: [0,1,2]
+
+Constraints:
+
+n == nums.length
+
+1 <= n <= 300
+
+nums[i] is either 0, 1, or 2.
+
+# Day20_Problem1
+
+**LEETCODE 15: 3Sum**
+<br>_link_ - https://leetcode.com/problems/3sum/description/
+<br>Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+
+Notice that the solution set must not contain duplicate triplets.
+
+Example 1:
+
+Input: nums = [-1,0,1,2,-1,-4]
+
+Output: [[-1,-1,2],[-1,0,1]]
+
+Explanation:
+
+nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.
+
+nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.
+
+nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.
+
+The distinct triplets are [-1,0,1] and [-1,-1,2].
+
+Notice that the order of the output and the order of the triplets does not matter.
+
+Example 2:
+
+Input: nums = [0,1,1]
+
+Output: []
+
+Explanation: The only possible triplet does not sum up to 0.
+
+Example 3:
+
+Input: nums = [0,0,0]
+
+Output: [[0,0,0]]
+
+Explanation: The only possible triplet sums up to 0.
+
+Constraints:
+
+3 <= nums.length <= 3000
+
+-105 <= nums[i] <= 105
