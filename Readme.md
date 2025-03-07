@@ -1029,3 +1029,553 @@ Constraints:
 3 <= nums.length <= 3000
 
 -105 <= nums[i] <= 105
+
+# Day21_Problem1
+
+**169. Majority Element using Moore's Voting**
+<br>_link_ - https://leetcode.com/problems/majority-element/description/
+<br>Given an array nums of size n, return the majority element.
+
+The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
+Example 1:
+
+Input: nums = [3,2,3]
+
+Output: 3
+
+Example 2:
+
+Input: nums = [2,2,1,1,1,2,2]
+
+Output: 2
+
+Constraints:
+
+n == nums.length
+
+1 <= n <= 5 \* 104
+
+-109 <= nums[i] <= 109
+
+# Day22_Problem1
+
+**LeetCode 704. Binary Search**
+<br>_link_ - https://leetcode.com/problems/binary-search/description/
+<br>Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+
+Input: nums = [-1,0,3,5,9,12], target = 9
+
+Output: 4
+
+Explanation: 9 exists in nums and its index is 4
+
+Example 2:
+
+Input: nums = [-1,0,3,5,9,12], target = 2
+
+Output: -1
+
+Explanation: 2 does not exist in nums so return -1
+
+Constraints:
+
+1 <= nums.length <= 104
+
+-104 < nums[i], target < 104
+
+All the integers in nums are unique.
+
+nums is sorted in ascending order.
+
+# Day22_Problem2
+
+**LeetCode 34. Find First and Last Position of Element in Sorted Array**
+<br>_link_ - https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/
+<br>Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+If target is not found in the array, return [-1, -1].
+
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+
+Input: nums = [5,7,7,8,8,10], target = 8
+
+Output: [3,4]
+
+Example 2:
+
+Input: nums = [5,7,7,8,8,10], target = 6
+
+Output: [-1,-1]
+
+Example 3:
+
+Input: nums = [], target = 0
+
+Output: [-1,-1]
+
+Constraints:
+
+0 <= nums.length <= 105
+
+-109 <= nums[i] <= 109
+
+nums is a non-decreasing array.
+
+-109 <= target <= 109
+
+# Day23_Problem1
+
+**LeetCode 162. Find Peak Element**
+<br>_link_ - https://leetcode.com/problems/find-peak-element/description/
+<br>A peak element is an element that is strictly greater than its neighbors.
+
+Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+
+You may imagine that nums[-1] = nums[n] = -∞. In other words, an element is always considered to be strictly greater than a neighbor that is outside the array.
+
+You must write an algorithm that runs in O(log n) time.
+
+Example 1:
+
+Input: nums = [1,2,3,1]
+
+Output: 2
+
+Explanation: 3 is a peak element and your function should return the index number 2.
+
+Example 2:
+
+Input: nums = [1,2,1,3,5,6,4]
+
+Output: 5
+
+Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
+
+Constraints:
+
+1 <= nums.length <= 1000
+
+-231 <= nums[i] <= 231 - 1
+
+nums[i] != nums[i + 1] for all valid i.
+
+# Day23_Problem2
+
+**LeetCode 33. Search in Rotated Sorted Array**
+<br>_link_ - https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+<br>There is an integer array nums sorted in ascending order (with distinct values).
+
+Prior to being passed to your function, nums is possibly rotated at an unknown pivot index k (1 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be rotated at pivot index 3 and become [4,5,6,7,0,1,2].
+
+Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.
+
+You must write an algorithm with O(log n) runtime complexity.
+
+Example 1:
+
+Input: nums = [4,5,6,7,0,1,2], target = 0
+
+Output: 4
+
+Example 2:
+
+Input: nums = [4,5,6,7,0,1,2], target = 3
+
+Output: -1
+
+Example 3:
+
+Input: nums = [1], target = 0
+
+Output: -1
+
+Constraints:
+
+1 <= nums.length <= 5000
+
+-104 <= nums[i] <= 104
+
+All values of nums are unique.
+
+nums is an ascending array that is possibly rotated.
+
+-104 <= target <= 104
+
+# Day24_Problem1
+
+**GFG: Square Root**
+<br>_link_ - https://www.geeksforgeeks.org/problems/square-root/0
+<br>Given a positive integer n, find the square root of n. If n is not a perfect square, then return the floor value.
+
+Floor value of any number is the greatest Integer which is less than or equal to that number
+
+Examples:
+
+Input: n = 4
+
+Output: 2
+
+Explanation: Since, 4 is a perfect square, so its square root is 2.
+
+Input: n = 11
+
+Output: 3
+
+Explanation: Since, 11 is not a perfect square, floor of square root of 11 is 3.
+
+Input: n = 1
+
+Output: 1
+
+Constraints:
+
+1 ≤ n ≤ 3 x 104
+
+# Day24_Problem2
+
+**GFG: Ceil The Floor**
+<br>_link_ - https://www.geeksforgeeks.org/problems/ceil-the-floor2802/1
+<br>Given an unsorted array arr[] of integers and an integer x, find the floor and ceiling of x in arr[].
+
+Floor of x is the largest element which is smaller than or equal to x. Floor of x doesn’t exist if x is smaller than smallest element of arr[].
+
+Ceil of x is the smallest element which is greater than or equal to x. Ceil of x doesn’t exist if x is greater than greatest element of arr[].
+
+Return an array of integers denoting the [floor, ceil]. Return -1 for floor or ceiling if the floor or ceiling is not present.
+
+Examples:
+
+Input: x = 7 , arr[] = [5, 6, 8, 9, 6, 5, 5, 6]
+
+Output: 6, 8
+
+Explanation: Floor of 7 is 6 and ceil of 7 is 8.
+
+Input: x = 10 , arr[] = [5, 6, 8, 8, 6, 5, 5, 6]
+
+Output: 8, -1
+
+Explanation: Floor of 10 is 8 but ceil of 10 is not possible.
+
+Expected Time Complexity: O(n)
+
+Expected Auxiliary Space: O(1)
+
+Constraints :
+1 ≤ arr.size ≤ 105
+
+1 ≤ arr[i], x ≤ 106
+
+# Day25_Problem1
+
+**Leetcode 81. Search in Rotated Sorted Array II**
+<br>_link_ - https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description/
+<br>There is an integer array nums sorted in non-decreasing order (not necessarily with distinct values).
+
+Before being passed to your function, nums is rotated at an unknown pivot index k (0 <= k < nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,4,4,5,6,6,7] might be rotated at pivot index 5 and become [4,5,6,6,7,0,1,2,4,4].
+
+Given the array nums after the rotation and an integer target, return true if target is in nums, or false if it is not in nums.
+
+You must decrease the overall operation steps as much as possible.
+
+Example 1:
+
+Input: nums = [2,5,6,0,0,1,2], target = 0
+
+Output: true
+
+Example 2:
+
+Input: nums = [2,5,6,0,0,1,2], target = 3
+
+Output: false
+
+Constraints:
+
+1 <= nums.length <= 5000
+
+-104 <= nums[i] <= 104
+
+nums is guaranteed to be rotated at some pivot.
+
+-104 <= target <= 104
+
+# Day25_Problem2
+
+**Coding Ninjas: Allocate Books**
+<br>_link_ - https://www.naukri.com/code360/problems/allocate-books_1090540?leftPanelTabValue=PROBLEM
+<br>Problem statement
+Given an array ‘arr’ of integer numbers, ‘arr[i]’ represents the number of pages in the ‘i-th’ book.
+
+There are ‘m’ number of students, and the task is to allocate all the books to the students.
+
+Allocate books in such a way that:
+
+1. Each student gets at least one book.
+
+2. Each book should be allocated to only one student.
+
+3. Book allocation should be in a contiguous manner.
+
+You have to allocate the book to ‘m’ students such that the maximum number of pages assigned to a student is minimum.
+
+If the allocation of books is not possible, return -1.
+
+Example:
+
+Input: ‘n’ = 4 ‘m’ = 2
+
+‘arr’ = [12, 34, 67, 90]
+
+Output: 113
+
+Explanation: All possible ways to allocate the ‘4’ books to '2' students are:
+
+12 | 34, 67, 90 - the sum of all the pages of books allocated to student 1 is ‘12’, and student two is ‘34+ 67+ 90 = 191’, so the maximum is ‘max(12, 191)= 191’.
+
+12, 34 | 67, 90 - the sum of all the pages of books allocated to student 1 is ‘12+ 34 = 46’, and student two is ‘67+ 90 = 157’, so the maximum is ‘max(46, 157)= 157’.
+
+12, 34, 67 | 90 - the sum of all the pages of books allocated to student 1 is ‘12+ 34 +67 = 113’, and student two is ‘90’, so the maximum is ‘max(113, 90)= 113’.
+
+We are getting the minimum in the last case.
+
+Hence answer is ‘113’.
+
+# Day26_Problem1
+
+**Coding Ninjas: Check If The String Is A Palindrome**
+<br>_link_ - https://www.naukri.com/code360/problems/check-if-the-string-is-a-palindrome_1062633?leftPanelTabValue=PROBLEM
+<br>Problem statement
+You are given a string 'S'. Your task is to check whether the string is palindrome or not. For checking palindrome, consider alphabets and numbers only and ignore the symbols and whitespaces.
+
+Note :
+
+String 'S' is NOT case sensitive.
+
+Example :
+
+Let S = “c1 O$d@eeD o1c”.
+
+If we ignore the special characters, whitespaces and convert all uppercase letters to lowercase, we get S = “c1odeedo1c”, which is a palindrome. Hence, the given string is also a palindrome.
+Detailed explanation ( Input/output format, Notes, Images )
+
+Constraints :
+
+1 <= T <= 100
+
+1 <= Length(S) <= 10^4
+
+Where 'T' denotes the number of test cases and 'S' denotes the given string.
+
+Time Limit : 1 sec
+
+# Day26_Problem2
+
+**Leetcode 151. Reverse Words in a String**
+<br>_link_ - https://leetcode.com/problems/reverse-words-in-a-string/description/
+<br>Given an input string s, reverse the order of the words.
+
+A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
+
+Return a string of the words in reverse order concatenated by a single space.
+
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+
+Example 1:
+
+Input: s = "the sky is blue"
+
+Output: "blue is sky the"
+
+Example 2:
+
+Input: s = " hello world "
+
+Output: "world hello"
+
+Explanation: Your reversed string should not contain leading or trailing spaces.
+
+Example 3:
+
+Input: s = "a good example"
+
+Output: "example good a"
+
+Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
+
+Constraints:
+
+1 <= s.length <= 104
+
+s contains English letters (upper-case and lower-case), digits, and spaces ' '.
+
+There is at least one word in s.
+
+# Day27_Problem1
+
+**Coding Ninjas: Replace Spaces**
+<br>_link_ - https://www.naukri.com/code360/problems/replace-spaces_1172172?leftPanelTabValue=PROBLEM&count=25&page=1&search=replace%20space&sort_entity=order&sort_order=ASC&customSource=studio_nav
+<br>Problem statement
+You have been given a string 'STR' of words. You need to replace all the spaces between words with “@40”.
+
+Detailed explanation ( Input/output format, Notes, Images )
+
+Constraints:
+
+1 <= T <= 50
+
+0 <= |STR| <= 100
+
+Where ‘|STR|’ is the length of a particular string including spaces.
+
+Time limit: 1 sec
+
+Sample Input 1:
+
+2
+
+Coding Ninjas Is A Coding Platform
+
+Hello World
+
+Sample Output 1:
+
+Coding@40Ninjas@40Is@40A@40Coding@40Platform
+
+Hello@40World
+
+# Day27_Problem2
+
+**Leetcode 1910. Remove All Occurrences of a Substring**
+<br>_link_ - https://leetcode.com/problems/remove-all-occurrences-of-a-substring/
+<br>Given two strings s and part, perform the following operation on s until all occurrences of the substring part are removed:
+
+Find the leftmost occurrence of the substring part and remove it from s.
+Return s after removing all occurrences of part.
+
+A substring is a contiguous sequence of characters in a string.
+
+Example 1:
+
+Input: s = "daabcbaabcbc", part = "abc"
+
+Output: "dab"
+
+Explanation: The following operations are done:
+
+- s = "daabcbaabcbc", remove "abc" starting at index 2, so s = "dabaabcbc".
+- s = "dabaabcbc", remove "abc" starting at index 4, so s = "dababc".
+- s = "dababc", remove "abc" starting at index 3, so s = "dab".
+  Now s has no occurrences of "abc".
+
+Constraints:
+
+1 <= s.length <= 1000
+
+1 <= part.length <= 1000\
+
+s​​​​​​ and part consists of lowercase English letters.
+
+# Day28_Problem1
+
+**Leetcode 567. Permutation in String**
+<br>_link_ - https://leetcode.com/problems/permutation-in-string/description/
+<br>Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise.
+
+In other words, return true if one of s1's permutations is the substring of s2.
+
+Example 1:
+
+Input: s1 = "ab", s2 = "eidbaooo"
+
+Output: true
+
+Explanation: s2 contains one permutation of s1 ("ba").
+
+Example 2:
+
+Input: s1 = "ab", s2 = "eidboaoo"
+
+Output: false
+
+Constraints:
+
+1 <= s1.length, s2.length <= 104
+
+s1 and s2 consist of lowercase English letters.
+
+# Day28_Problem2
+
+**Leetcode 443. String Compression**
+<br>_link_ - https://leetcode.com/problems/string-compression/description/
+<br>Given an array of characters chars, compress it using the following algorithm:
+
+Begin with an empty string s. For each group of consecutive repeating characters in chars:
+
+If the group's length is 1, append the character to s.
+Otherwise, append the character followed by the group's length.
+The compressed string s should not be returned separately, but instead, be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.
+
+After you are done modifying the input array, return the new length of the array.
+
+You must write an algorithm that uses only constant extra space.
+
+Example 1:
+
+Input: chars = ["a","a","b","b","c","c","c"]
+
+Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"]
+
+Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".
+
+Example 2:
+
+Input: chars = ["a"]
+
+Output: Return 1, and the first character of the input array should be: ["a"]
+
+Explanation: The only group is "a", which remains uncompressed since it's a single character.
+
+Constraints:
+
+1 <= chars.length <= 2000
+
+chars[i] is a lowercase English letter, uppercase English letter, digit, or symbol.
+
+# Day28_Problem3
+
+**Leetcode 1047. Remove All Adjacent Duplicates In String**
+<br>_link_ - https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/
+<br>You are given a string s consisting of lowercase English letters. A duplicate removal consists of choosing two adjacent and equal letters and removing them.
+
+We repeatedly make duplicate removals on s until we no longer can.
+
+Return the final string after all such duplicate removals have been made. It can be proven that the answer is unique.
+
+Example 1:
+
+Input: s = "abbaca"
+
+Output: "ca"
+
+Explanation:
+For example, in "abbaca" we could remove "bb" since the letters are adjacent and equal, and this is the only possible move. The result of this move is that the string is "aaca", of which only "aa" is possible, so the final string is "ca".
+
+Example 2:
+
+Input: s = "azxxzy"
+
+Output: "ay"
+
+Constraints:
+
+1 <= s.length <= 105
+
+s consists of lowercase English letters.
